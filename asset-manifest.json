@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/best-movie/static/css/main.a9584c62.css",
+    "main.js": "/best-movie/static/js/main.05bc6133.js",
+    "static/media/spiderman.jpeg": "/best-movie/static/media/spiderman.f1362f6654ec1a2c9ac5.jpeg",
+    "static/media/jurassicWorld.jpg": "/best-movie/static/media/jurassicWorld.b0f87868d84ff4a24308.jpg",
+    "static/media/bg.jpg": "/best-movie/static/media/bg.e2d6610a3bab2f316516.jpg",
+    "static/media/msmarvel.jpeg": "/best-movie/static/media/msmarvel.ded24b14f0204019f690.jpeg",
+    "static/media/avangers.jpg": "/best-movie/static/media/avangers.75b250069bdeee2385ab.jpg",
+    "index.html": "/best-movie/index.html",
+    "main.a9584c62.css.map": "/best-movie/static/css/main.a9584c62.css.map",
+    "main.05bc6133.js.map": "/best-movie/static/js/main.05bc6133.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9584c62.css",
+    "static/js/main.05bc6133.js"
+  ]
+}
