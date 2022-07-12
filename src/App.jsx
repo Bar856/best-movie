@@ -34,17 +34,19 @@ function App() {
     getRate(){
       return getSumOfRates(this.rateArray);
     }
+    addRate(r){
+      this.rateArray.push(r);
+    }
 }
 
-let movie2=new MovieClass('Avangers','describe1',avangers,[1,1,1])
-let movie1=new MovieClass('Spider-Man No Way Home','describe2',spiderman,[2,2,2])
+let movie1=new MovieClass('Avangers','describe1',avangers,[1,1,1])
+let movie2=new MovieClass('Spider-Man No Way Home','describe2',spiderman,[2,2,2])
 let movie3=new MovieClass('Jurassic World Dominion','describe3',jurassic,[3,3,3])
 let movie4=new MovieClass('Ms. Marvel','describe4',MsMarvel,[4,4,4])
 
   const [movies, setMovies] = useState([movie1,movie2,movie3,movie4]);  
   const [movieSelected, setMovieSelected] = useState(movies[0]);
   const [TopThreeArr, setTopThreeArr] = useState([...movies].sort((a,b) =>  (b.getRate() - a.getRate()) ));
-
   const getMovieLink = () =>{
     return '/best-movie/' + movieSelected.name.replaceAll(' ','-');
   }
@@ -52,7 +54,7 @@ let movie4=new MovieClass('Ms. Marvel','describe4',MsMarvel,[4,4,4])
     let tmpMovies = [...movies];
     tmpMovies.forEach((r,i)=>{
       if (r===movieSelected){
-        tmpMovies[i].rateArray.push(Number(rating));
+        tmpMovies[i].addRate(Number(rating));
         setMovies(tmpMovies);
       }
     })

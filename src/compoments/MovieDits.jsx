@@ -23,7 +23,11 @@ export default function MovieDits(props) {
         {props.movieSelected.name}<br/>
         rate:{props.movieSelected.getRate()}<br/>
         {props.movieSelected.describe}<br/>
-        <input type={'number'} onChange={(e)=>setRating(e.target.value)}/>
+        <input type={'button'} value="1" onClick={()=>setRating(1)}></input>
+        <input type={'button'} value="2" onClick={()=>setRating(2)}></input>
+        <input type={'button'} value="3" onClick={()=>setRating(3)}></input>
+        <input type={'button'} value="4" onClick={()=>setRating(4)}></input>
+        <input type={'button'} value="5" onClick={()=>setRating(5)}></input>
         <input type={'button'} onClick={addStars} value='Rate!'></input>
         {/* <input type={'button'} onClick={backToHome} value='back'></input> */}
       {/* {navToHome && <Navigate replace to='/'/>} */}
